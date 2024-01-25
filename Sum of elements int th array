@@ -2,24 +2,24 @@
 
 int main(){
     int *p;
-    int length, arr[100], sum = 0, i;
+    int N, arr[50], sum = 0, i;
 
-    printf("Enter the length of the array:");
-    scanf("%d",&length);
+    printf("Enter the No. of elements in the array:");
+    scanf("%d",&N);
 
     printf("Enter the elements of the array:");
-    for (i=0; i<length; i++){
+    for (i=0; i<N; i++){
         scanf("%d", &arr[i]);
     }
 
-    printf("The array entered is:");
-    for (i=0; i<length; i++){
+    printf("The array of %d elements is:", N);
+    for (i=0; i<N; i++){
         printf("%d ", arr[i]);
-        sum+=arr[i];
+        sum=sum+arr[i];
     }
     printf("\n");
     
-    printf("The sum of the array elements is equal to = %d",sum);
+    printf("The sum of the elements in the array is = %d",sum);
 
     return 0;
 }
